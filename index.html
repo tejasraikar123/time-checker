@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check the Time</title>
+</head>
+<body>
+    <h1>What's the time?</h1>
+    <button onclick="showTime()">Check Time</button>
+    <p id="time-display"></p>
+
+    <script>
+        function showTime() {
+            const now = new Date();
+            document.getElementById('time-display').innerText = now.toLocaleTimeString();
+        }
+    </script>
+</body>
+</html>
